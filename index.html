@@ -6,10 +6,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
+        <meta charset="UTF-8">
         <link rel="shortcut icon" href="Images/logo.png">
         <link rel="stylesheet" href="portfolioStyle.css"/>
-		<script src="portfolioScript.js"></script>
     </head>
 
     <body>
@@ -24,7 +23,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about-container">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services-container">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#skills-container">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#project-container">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects-container">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact-container">Contact</a></li>    
                     </ul>
                 </div>
@@ -35,8 +34,10 @@
         <main>
 
             <!--About Container-->
-            <section class="container-fluid pt-5 pb-5" id="about-container">
-                <div class="container mt-5 mb-5">
+            <section class="container-fluid background-dark" id="about-section">
+                <h2>about</h2>
+
+                <div class="container" id="about-container">
                     <p>
                         Hello, I&apos;m Thomas, a web developer passionate 
                         about technology and eager to learn many related skills in
@@ -45,19 +46,19 @@
                         on new challenges.
                     </p>
 
-                    <div class="container" id="social-media">
-                        <a href="https://uk.linkedin.com/in/thomas-bikar-b0857360" target="_blank" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/tiWebCoder" target="_blank" class="fa fa-github"></a>
-                        <a href="#contact-container" class="fa fa-envelope"></a>
+                    <div class="container-fluid social-media">
+                        <a href="https://uk.linkedin.com/in/thomas-bikar-b0857360" target="_blank" class="social-media-link fa fa-linkedin"></a>
+                        <a href="https://github.com/tiWebCoder" target="_blank" class="social-media-link fa fa-github"></a>
+                        <a href="#contact-container" class="social-media-link fa fa-envelope"></a>
                     </div>
                 </div>
             </section>
 
             <!--Services Container-->
-            <section class="container-fluid background-dark pt-5 pb-5" id="services-container">
-                <h2>SERVICES</h2>
+            <section class="container-fluid background-dark" id="services-section">
+                <h2>services</h2>
 
-                <div class="container mt-5 mb-5">
+                <div class="container" id="services-container">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Frontend Development</h4>
@@ -115,10 +116,10 @@
             </section>
 
             <!--Skills Container-->
-            <section class="container-fluid pt-5 pb-5" id="skills-container">
-                <h2>SKILLS</h2>
+            <section class="container-fluid" id="skills-section">
+                <h2>skills</h2>
 
-                <div class="container mt-5 mb-5">
+                <div class="container" id="skills-container">
                     <div class="card">
                         <img class="card-img-top" src="Images/Skills_Icons/html5.png" alt="HTML5 icon">
                         <div class="card-body">
@@ -155,6 +156,13 @@
                     </div>
 
                     <div class="card">
+                        <img class="card-img-top" src="Images/Skills_Icons/jquery.png" alt="jQuery icon">
+                        <div class="card-body">
+                            <h4 class="card-title">jQuery</h4>
+                        </div>
+                    </div>
+
+                    <div class="card">
                         <img class="card-img-top" src="Images/Skills_Icons/java.png" alt="Java icon">
                         <div class="card-body">
                             <h4 class="card-title">Java</h4>
@@ -171,56 +179,79 @@
             </section>
 
             <!--Project Container-->
-            <section class="container-fluid background-dark pt-5 pb-5" id="project-container">
-                <h2>PROJECTS</h2>
+            <section class="container-fluid background-dark" id="projects-section">
+                <h2>projects</h2>
 
-                <div class="container mt-5 mb-5">
+                <div class="container" id="projects-container">
                     <div class="card">
-                        <img class="card-icon card-img-top" src="Images/Projects_Icons/rolling_stones.png" alt="Rolling stones icon">
+                        <img class="card-icon card-img-top" src="Images/Projects_Icons/rolling_stones.jpeg" alt="Rolling Stones">
                         <div class="card-body">
                             <h4 class="card-title">The Rolling Stones</h4>
-                            <p class="card-text"></p>
+                            <a href="https://tiwebcoder.github.io/The_Rolling_Stones/" target="_blank" class="btn-link fa fa-globe"></a>
+                            <a href="https://github.com/tiWebCoder/The_Rolling_Stones" target="_blank" class="btn-link fa fa-code"></a>
                         </div>
                     </div>
 
                     <div class="card">
-                        <img class="card-icon card-img-top" src="Images/Projects_Icons/manchester_united.png" alt="Manchester united icon">
+                        <img class="card-icon card-img-top" src="Images/Projects_Icons/manchester_united.jpeg" alt="Manchester United">
                         <div class="card-body">
                             <h4 class="card-title">Manchester United</h4>
-                            <p class="card-text"></p>
+                            <a class="btn-link fa fa-globe"></a>
+                            <a class="btn-link fa fa-code"></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-icon card-img-top" src="Images/Projects_Icons/darts_central.jpeg" alt="Darts Central">
+                        <div class="card-body">
+                            <h4 class="card-title">Darts Central</h4>
+                            <a class="btn-link fa fa-globe"></a>
+                            <a class="btn-link fa fa-code"></a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-icon card-img-top" src="Images/Projects_Icons/roman_reigns.jpeg" alt="Roman Reigns">
+                        <div class="card-body">
+                            <h4 class="card-title">Roman Reigns</h4>
+                            <a class="btn-link fa fa-globe"></a>
+                            <a class="btn-link fa fa-code"></a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!--Contact Container-->
-            <section class="container-fluid pt-5 pb-5" id="contact-container">
-                <h2>LETS GET IN TOUCH</h2>
+            <section class="container-fluid" id="contact-section">
+                <h2>contact</h2>
 
-                <div class="container mt-5 mb-5">
-                    <div class="card">
-                        <label class="card-icon fa fa-envelope-o"></label>
-                        <div class="card-body">
-                            <p class="card-text">Email: tbikar@ymail.com</p>
-                        </div>
+                <div class="container" id="contact-container">
+                    <form>
+                        <h3>let's get in touch</h3>
+
+                        <label for="name" class="form-label">name:</label>
+                        <input type="text" class="form-control" id="your-name" name="name" placeholder="Your Name" required>
+
+                        <label for="email" class="form-label">email:</label>
+                        <input type="email" class="form-control" id="your-email" name="email" placeholder="Your Email" required>
+
+                        <label for="subject" class="form-label">subject:</label>
+                        <input type="text" class="form-control" id="your-subject" name="subject" placeholder="Message Subject" required>
+
+                        <label for="message" class="form-label">message:</label>
+                        <textarea class="form-control" id="your-message" name="message" placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="btn btn-dark w-100">send</button>
+                    </form>
+
+                    <div class="container-fluid social-media">
+                        <a href="https://uk.linkedin.com/in/thomas-bikar-b0857360" target="_blank" class="social-media-link fa fa-linkedin"></a>
+                        <a href="https://github.com/tiWebCoder" target="_blank" class="social-media-link fa fa-github"></a>
                     </div>
-
-                    <a href="https://uk.linkedin.com/in/thomas-bikar-b0857360" class="card" target="_blank">
-                        <label class="card-icon fa fa-linkedin"></label>
-                        <div class="card-body">
-                            <p class="card-text">Linkedin</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/tiWebCoder" class="card" target="_blank">
-                        <label class="card-icon fa fa-github"></label>
-                        <div class="card-body">
-                            <p class="card-text">GitHub</p>
-                        </div>
-                    </a>
                 </div>
             </section>
 
         </main>
+
     </body>
 </html>
